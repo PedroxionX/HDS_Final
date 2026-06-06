@@ -1,0 +1,118 @@
+@page "/editar-doctor/{id:int}"
+@using Aplicacion.DTOs.Doctores
+@inject Aplicacion.Servicios.Interfaces.IDoctorServicio DoctorServicio
+@inject Aplicacion.Servicios.Interfaces.IEspecialidadService EspecialidadService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+<PageTitle>Editar Doctor</PageTitle>
+<div class="container mt-4">
+<div class="row justify-content-center">
+<div class="col-lg-8 col-md-10 col-sm-12">
+<div class="card shadow-lg border-0 rounded-4">
+<div class="card-header bg-warning bg-gradient text-dark">
+    <h5 class="mb-0">
+        <i class="fas fa-user-edit me-2"></i>Editar Doctor
+    </h5>
+</div>
+<div class="card-body p-4">
+@if (!string.IsNullOrEmpty(MensajeError))
+{
+    <div class="alert alert-danger">@MensajeError</div>
+}
+@if (Cargando)
+{
+    <div class="text-center py-5">
+        <i class="fas fa-spinner fa-pulse fa-2x text-primary"></i>
+        <p class="mt-2">Cargando datos...</p>
+    </div>
+}
+else if (doctorDTO != null)
+{
+    <EditForm Model="@doctorDTO" OnValidSubmit="GrabarDoctor">
+        <FluentValidator />
+        <ValidationSummary class="text-danger mb-3" />
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <label for="idDoctor" class="form-label fw-semibold">
+                    <i class="fas fa-hashtag me-1"></i> ID Doctor
+                </label>
+                <InputNumber id="idDoctor" class="form-control" @bind-Value="doctorDTO.Id" disabled readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="nombre" class="form-label fw-semibold">
+                    <i class="fas fa-user me-1"></i> Nombre Completo
+                </label>
+                <InputText id="nombre" class="form-control" @bind-Value="doctorDTO.Nombre" />
+                <ValidationMessage For="@(() => doctorDTO.Nombre)" class="text-danger small" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="especialidad" class="form-label fw-semibold">
+                    <i class="fas fa-stethoscope me-1"></i> Especialidad
+                </label>
+                <InputSelect id="especialidad" class="form-select" @bind-Value="doctorDTO.IdEspecialidad">
+                    <option value="0">-- Seleccione una especialidad --</option>
+                    @if (Especialidades != null)
+                    {
+                        @foreach (var especialidad in Especialidades)
+                        {
+                            <option value="@especialidad.Id">@especialidad.Nombre</option>
+                        }
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => doctorDTO.IdEspecialidad)" class="text-danger small" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="telefono" class="form-label fw-semibold">
+                    <i class="fas fa-phone me-1"></i> Teléfono
+                </label>
+                <InputText id="telefono" class="form-control" @bind-Value="doctorDTO.Telefono" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="email" class="form-label fw-semibold">
+                    <i class="fas fa-envelope me-1"></i> Email
+                </label>
+                <InputText id="email" class="form-control" @bind-Value="doctorDTO.Email" />
+                <ValidationMessage For="@(() => doctorDTO.Email)" class="text-danger small" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="fechaContratacion" class="form-label fw-semibold">
+                    <i class="fas fa-calendar-alt me-1"></i> Fecha de Contratación
+                </label>
+                <InputDate id="fechaContratacion" class="form-control" @bind-Value="doctorDTO.FechaContratacion" />
+                <ValidationMessage For="@(() => doctorDTO.FechaContratacion)" class="text-danger small" />
+            </div>
+            <div class="col-md-6 mb-3 d-flex align-items-end">
+                <div class="form-check pb-2">
+                    <InputCheckbox id="activo" class="form-check-input" @bind-Value="doctorDTO.Activo" />
+                    <label class="form-check-label fw-semibold" for="activo">Activo</label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label fw-semibold">
+                <i class="fas fa-align-left me-1"></i> Descripción
+            </label>
+            <InputTextArea id="descripcion" class="form-control" @bind-Value="doctorDTO.Descripcion" rows="3" />
+            <ValidationMessage For="@(() => doctorDTO.Descripcion)" class="text-danger small" />
+        </div>
+        <div class="d-flex justify-content-end gap-2 mt-3">
+            <button type="button" class="btn btn-secondary px-4" @onclick="Cancelar">
+                <i class="fas fa-times me-1"></i> Cancelar
+            </button>
+            <button type="submit" class="btn btn-success px-4">
+                <i class="fas fa-save me-1"></i> Actualizar Doctor
+            </button>
+        </div>
+    </EditForm>
+}
+</div>
+</div>
+</div>
+</div>
+</div>

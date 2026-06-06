@@ -1,0 +1,14 @@
+namespace Aplicacion.DTOs.Evoluciones;
+
+public class ActualizarEvolucionDTO
+{
+    public int Id { get; set; }
+    public int IdHistoriaClinica { get; set; }
+    public int IdDoctor { get; set; }
+    public DateTime Fecha { get; set; }
+    public string Diagnostico { get; set; } = string.Empty;
+    public string Tratamiento { get; set; } = string.Empty;
+    public string? Notas { get; set; }
+    public bool Activo { get; set; }
+}
+

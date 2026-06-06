@@ -1,0 +1,28 @@
+@page "/crear-especialidad"
+@using Aplicacion.DTOs.Especialidades
+@rendermode InteractiveServer
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Crear Especialidad</h6>
+    </div>
+    <div class="card-body">
+        <EditForm Model="crearEspecialidadDTO" OnValidSubmit="GrabarEspecialidad">
+            <FluentValidationValidator />
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <InputText class="form-control" @bind-Value="crearEspecialidadDTO.Nombre" />
+                <ValidationMessage For="@(() => crearEspecialidadDTO.Nombre)" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Descripción</label>
+                <InputTextArea class="form-control" @bind-Value="crearEspecialidadDTO.Descripcion" rows="4" />
+                <ValidationMessage For="@(() => crearEspecialidadDTO.Descripcion)" />
+                <small class="text-muted">@(crearEspecialidadDTO.Descripcion?.Length ?? 0) / 500 caracteres</small>
+            </div>
+            <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Guardar Especialidad</button>
+            </div>
+        </EditForm>
+    </div>
+</div>

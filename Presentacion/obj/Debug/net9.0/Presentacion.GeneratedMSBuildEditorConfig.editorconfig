@@ -1,0 +1,169 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Presentacion
+build_property.RootNamespace = Presentacion
+build_property.ProjectDir = /Users/pedrobalderrama/Downloads/HDS/Presentacion/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/pedrobalderrama/Downloads/HDS/Presentacion
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/Confirmacion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db25maXJtYWNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Citas/Citas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvQ2l0YXMvQ2l0YXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Citas/CrearCita.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvQ2l0YXMvQ3JlYXJDaXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Citas/DetalleCita.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvQ2l0YXMvRGV0YWxsZUNpdGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Citas/EditarCita.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvQ2l0YXMvRWRpdGFyQ2l0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Citas/ListaCitas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvQ2l0YXMvTGlzdGFDaXRhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Doctores/CrearDoctor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRG9jdG9yZXMvQ3JlYXJEb2N0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Doctores/DetalleDoctor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRG9jdG9yZXMvRGV0YWxsZURvY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Doctores/EditarDoctor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRG9jdG9yZXMvRWRpdGFyRG9jdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Doctores/ListaDoctores.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRG9jdG9yZXMvTGlzdGFEb2N0b3Jlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Especialidades/CrearEspecialidad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXNwZWNpYWxpZGFkZXMvQ3JlYXJFc3BlY2lhbGlkYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Especialidades/DetalleEspecialidad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXNwZWNpYWxpZGFkZXMvRGV0YWxsZUVzcGVjaWFsaWRhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Especialidades/EditarEspecialidad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXNwZWNpYWxpZGFkZXMvRWRpdGFyRXNwZWNpYWxpZGFkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Especialidades/ListaEspecialidades.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXNwZWNpYWxpZGFkZXMvTGlzdGFFc3BlY2lhbGlkYWRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Evoluciones/CrearEvolucion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXZvbHVjaW9uZXMvQ3JlYXJFdm9sdWNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Evoluciones/DetalleEvolucion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXZvbHVjaW9uZXMvRGV0YWxsZUV2b2x1Y2lvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Evoluciones/EditarEvolucion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXZvbHVjaW9uZXMvRWRpdGFyRXZvbHVjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Evoluciones/Evoluciones.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXZvbHVjaW9uZXMvRXZvbHVjaW9uZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Evoluciones/ListaEvoluciones.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvRXZvbHVjaW9uZXMvTGlzdGFFdm9sdWNpb25lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/HistoriasClinicas/CrearHistoria.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvSGlzdG9yaWFzQ2xpbmljYXMvQ3JlYXJIaXN0b3JpYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/HistoriasClinicas/DetalleHistoria.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvSGlzdG9yaWFzQ2xpbmljYXMvRGV0YWxsZUhpc3RvcmlhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/HistoriasClinicas/EditarHistoria.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvSGlzdG9yaWFzQ2xpbmljYXMvRWRpdGFySGlzdG9yaWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/HistoriasClinicas/ListaHistorias.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvSGlzdG9yaWFzQ2xpbmljYXMvTGlzdGFIaXN0b3JpYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Pacientes/CrearPacientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvUGFjaWVudGVzL0NyZWFyUGFjaWVudGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Pacientes/DetallePacientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvUGFjaWVudGVzL0RldGFsbGVQYWNpZW50ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Pacientes/EditarPacientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvUGFjaWVudGVzL0VkaXRhclBhY2llbnRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/ECE/Pacientes/Pacientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FQ0UvUGFjaWVudGVzL1BhY2llbnRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Pages/PruebaToastr.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9QcnVlYmFUb2FzdHIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-iljuwvfofd
+
+[/Users/pedrobalderrama/Downloads/HDS/Presentacion/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qph9gystaj

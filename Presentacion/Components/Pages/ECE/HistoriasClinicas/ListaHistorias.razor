@@ -1,0 +1,86 @@
+@page "/historias-clinicas"
+@using Aplicacion.DTOs.HistoriasClinicas
+@inject Aplicacion.Servicios.Interfaces.IHistoriaClinicaService HistoriaService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<PageTitle>Historias Clinicas</PageTitle>
+
+<div class="container mt-4">
+<div class="card shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white rounded-top-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">
+            <i class="fas fa-notes-medical me-2"></i>Listado de Historias Clinicas
+        </h4>
+        <button class="btn btn-success" @onclick="IrACrear">
+            <i class="fas fa-plus-circle me-1"></i> Nueva Historia Clinica
+        </button>
+    </div>
+</div>
+<div class="card-body p-2 bg-primary-subtle">
+@if (Cargando)
+{
+    <div class="text-center py-5">
+        <i class="fas fa-spinner fa-pulse fa-2x text-primary"></i>
+        <p class="mt-2">Cargando historias clinicas...</p>
+    </div>
+}
+else if (!string.IsNullOrEmpty(MensajeError))
+{
+    <div class="alert alert-danger">@MensajeError</div>
+}
+else if (Historias == null || !Historias.Any())
+{
+    <div class="alert alert-info text-center">
+        <i class="fas fa-info-circle me-2"></i> No hay historias clinicas registradas.
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Paciente</th>
+                    <th>Fecha Apertura</th>
+                    <th>Alergias</th>
+                    <th>Antecedentes Familiares</th>
+                    <th>Estado</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var historia in Historias)
+                {
+                    <tr>
+                        <td>@historia.NombrePaciente</td>
+                        <td>@historia.FechaApertura.ToString("dd/MM/yyyy")</td>
+                        <td>@ObtenerTextoCorto(historia.Alergias)</td>
+                        <td>@ObtenerTextoCorto(historia.AntecedentesFamiliares)</td>
+                        <td>
+                            <span class="badge @(historia.Activo ? "bg-success" : "bg-secondary")">
+                                @(historia.Activo ? "Activo" : "Inactivo")
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-info me-1" @onclick="() => VerDetalles(historia.Id)" title="Detalles">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-warning me-1" @onclick="() => Editar(historia.Id)" title="Editar">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" @onclick="() => ConfirmarEliminar(historia.Id, historia.NombrePaciente)" title="Eliminar">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+</div>
+</div>
+</div>
+

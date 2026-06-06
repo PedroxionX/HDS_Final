@@ -1,0 +1,42 @@
+@page "/editar-especialidad/{id:int}"
+@using Aplicacion.DTOs.Especialidades
+@rendermode InteractiveServer
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Editar Especialidad</h6>
+    </div>
+    <div class="card-body">
+        @if (especialidadOriginal == null)
+        {
+            <div class="text-center"><div class="spinner-border text-primary"></div></div>
+        }
+        else
+        {
+            <EditForm Model="especialidadEditar" OnValidSubmit="GrabarEspecialidad">
+                <FluentValidationValidator />
+                <div class="mb-3">
+                    <label class="form-label">ID (Solo lectura)</label>
+                    <input class="form-control" value="@id" disabled />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <InputText class="form-control" @bind-Value="especialidadEditar.Nombre" />
+                    <ValidationMessage For="@(() => especialidadEditar.Nombre)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <InputTextArea class="form-control" @bind-Value="especialidadEditar.Descripcion" rows="4" />
+                    <ValidationMessage For="@(() => especialidadEditar.Descripcion)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Activa</label>
+                    <InputCheckbox @bind-Value="especialidadEditar.Activo" />
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                    <button type="button" class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </EditForm>
+        }
+    </div>
+</div>

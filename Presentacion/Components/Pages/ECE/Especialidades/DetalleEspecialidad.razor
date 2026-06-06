@@ -1,0 +1,34 @@
+@page "/detalles-especialidad/{id:int}"
+@using Aplicacion.DTOs.Especialidades
+@rendermode InteractiveServer
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Detalle de Especialidad</h6>
+    </div>
+    <div class="card-body">
+        @if (especialidad == null)
+        {
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status"></div>
+            </div>
+        }
+        else
+        {
+            <h4 class="mb-3">@especialidad.Nombre</h4>
+            <div class="mb-3">
+                <strong>Descripción:</strong>
+                <p>@(string.IsNullOrWhiteSpace(especialidad.Descripcion) ? "Sin descripción" : especialidad.Descripcion)</p>
+            </div>
+            <div class="mb-3">
+                <strong>Estado:</strong>
+                <span class="badge @(especialidad.Activo ? "bg-success" : "bg-danger")">
+                    @(especialidad.Activo ? "Activo" : "Inactivo")
+                </span>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-secondary me-2" @onclick="Volver">Volver al listado</button>
+                <button class="btn btn-warning" @onclick="Editar">Editar especialidad</button>
+            </div>
+        }
+    </div>
+</div>
